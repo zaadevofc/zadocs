@@ -1,0 +1,15 @@
+---
+import BaseHead from './BaseHead.astro';
+
+const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} image={image} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,5 +1,2 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'Astro Blog';
-export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const SITE_TITLE = 'Home | Zadocs Automitation';
+export const SITE_DESCRIPTION = 'Buat dokumenmu secara dinamis dan otomatis tanpa perlu ribet!!';
