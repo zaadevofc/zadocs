@@ -16,8 +16,16 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8  # You can specify the version you want to use
+
       - name: Install, build, and upload your site
         uses: withastro/action@v2
+        with:
+          package-manager: pnpm  # Specify that we're using pnpm
 
   deploy:
     needs: build
